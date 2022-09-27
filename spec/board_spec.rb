@@ -42,7 +42,7 @@ module ConnectFourGame
       subject { Board.new }
 
       context 'when init board' do
-        it "returns true" do
+        it "returns false" do
           expect(subject.won_game?).to eq false
         end
       end
