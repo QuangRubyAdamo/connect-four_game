@@ -1,7 +1,5 @@
 module ConnectFourGame
   class Player
-    include Helper
-
     attr_accessor :name, :token
 
     def initialize(name, token)
@@ -33,7 +31,7 @@ module ConnectFourGame
       value = -1
       value = gets.chomp
 
-      raise "Not valid number, please enter number between 0 and #{column - 1}" unless is_numberic?(value)
+      raise "Not valid number, please enter number between 0 and #{column - 1}" unless ConnectFourGame::Helper.is_numberic?(value)
 
       value.to_i
     end

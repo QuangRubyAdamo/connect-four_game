@@ -24,7 +24,7 @@ module ConnectFourGame
         board.print_board
 
         puts "-------------------------------------------------------------------"
-        puts "#{current_player.name}'s turn (token is #{current_player.token})"
+        puts "#{current_player.name}'s turn (token is #{current_player.token}). Please enter from 0 to 6"
         puts "-------------------------------------------------------------------"
 
         current_player.make_a_move(board)

@@ -1,6 +1,6 @@
 module ConnectFourGame
-  module Helper
-    def is_numberic?(string)
+  class Helper
+    def self.is_numberic?(string)
       return false if string.empty?
 
       string.scan(/\D/).empty?
